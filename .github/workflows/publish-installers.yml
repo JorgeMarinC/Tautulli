@@ -77,7 +77,7 @@ jobs:
           Move-Item dist\updater\* dist\Tautulli\ -Force
 
       - name: Create Windows Installer
-        uses: joncloud/makensis-action@v3.4
+        uses: joncloud/makensis-action@v3.7
         if: matrix.os == 'windows'
         with:
           script-file: ./package/Tautulli.nsi
